@@ -11,3 +11,9 @@ Transições suaves com animações escalonadas por elemento
 Imagens premium do Unsplash contextualizadas por segmento
 Numeração decorativa em marca d'água em cada slide
 Hint de teclado que desaparece automaticamente após 4 segundos
+
+### Estrutura:
+
+1. **index.html** - 
+2. **css.html** - 
+3. **javascript.html** - 
