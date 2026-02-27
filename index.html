@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <title>D'LINEA — Prospecção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Bebas+Neue&family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── CHROME ───────────────────────────────── -->
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="logo">D'LINEA</div>
+
+<div class="slide-counter">
+  <span id="currentSlide">01</span>
+  <span class="divider">/</span>
+  <span id="totalSlides">25</span>
+</div>
+
+<nav class="nav-arrows">
+  <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">
+    <svg viewBox="0 0 24 24"><polyline points="15,18 9,12 15,6"/></svg>
+  </button>
+  <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">
+    <svg viewBox="0 0 24 24"><polyline points="9,6 15,12 9,18"/></svg>
+  </button>
+</nav>
+
+<div class="slide-dots" id="slideDots"></div>
+<div class="keyboard-hint" id="kbHint">← → swipe ou setas do teclado</div>
+
+<!-- ── SLIDES ───────────────────────────────── -->
+<div class="slides-container" id="slidesContainer">
+
+  <!-- 01 · ABERTURA -->
+  <div class="slide" data-index="0">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80" alt="" class="bg-img">
+      <div class="overlay"></div>
+    </div>
+    <div class="slide-content centered">
+      <div class="label-tag">Treinamento de Alta Performance — Prospecção</div>
+      <h1 class="hero-title">A estratégia<br><em>começa aqui.</em></h1>
+      <div class="accent-line"></div>
+      <p class="hero-sub">Planejamento, organização e execução — o método D'Linea para vender alto padrão com consistência</p>
+    </div>
+    <div class="slide-number-bg">01</div>
+  </div>
+
+  <!-- 02 · ESTRUTURA -->
+  <div class="slide" data-index="1">
+    <div class="slide-bg dark-bg"></div>
+    <div class="slide-content split">
+      <div class="content-left">
+        <div class="section-tag">Fundamentos da Prospecção</div>
+        <h2 class="slide-title">A estrutura<br>que gera<br>resultados</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="content-right">
+        <ol class="premium-list">
+          <li><span class="num">01</span><span class="text">Organize o processo antes de qualquer ação em campo</span></li>
+          <li><span class="num">02</span><span class="text">Defina com precisão quem são seus alvos prioritários</span></li>
+          <li><span class="num">03</span><span class="text">Prepare os materiais certos para cada público</span></li>
+          <li><span class="num">04</span><span class="text">Planeje e execute as ações com intencionalidade</span></li>
+          <li><span class="num">05</span><span class="text">Estabeleça metas claras e mensuráveis</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="slide-number-bg">02</div>
+  </div>
+
+  <!-- 03 · SEGMENTOS -->
+  <div class="slide" data-index="2">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80" alt="" class="bg-img">
+      <div class="overlay dark"></div>
+    </div>
+    <div class="slide-content centered">
+      <div class="section-tag">Mapeamento de Oportunidades</div>
+      <h2 class="slide-title large">Seus 8<br>Segmentos</h2>
+      <div class="accent-line"></div>
+      <div class="segments-grid">
+        <div class="seg-item">Especificadores</div>
+        <div class="seg-item">Indicadores</div>
+        <div class="seg-item">Construtoras</div>
+        <div class="seg-item">Clientes Finais</div>
+        <div class="seg-item">Corretores</div>
+        <div class="seg-item">Síndicos</div>
+        <div class="seg-item">Negócios Cruzados</div>
+        <div class="seg-item">Incorporadoras</div>
+      </div>
+    </div>
+    <div class="slide-number-bg">03</div>
+  </div>
+
+  <!-- 04 · ESPECIFICADORES I -->
+  <div class="slide" data-index="3">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Segmento</div>
+        <h2 class="slide-title">Especificadores</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Priorize profissionais cujo posicionamento de mercado seja compatível com o nível de excelência da marca D'Linea — qualidade atrai qualidade</li>
+          <li><strong>Relacionamento contínuo</strong> é o ativo mais valioso neste segmento. Invista em ações criativas e personalizadas que fortaleçam a proximidade com a sua franquia</li>
+          <li>Em eventos presenciais ou encontros virtuais, trabalhe sempre com grupos reduzidos formados por afinidade — a profundidade da conexão vale mais do que o volume</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">04</div>
+  </div>
+
+  <!-- 05 · ESPECIFICADORES II -->
+  <div class="slide" data-index="4">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Segmento</div>
+        <h2 class="slide-title">Especificadores</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Apresente e reforce os programas exclusivos <strong>da D'Linea</strong> em cada ponto de contato — eles são diferenciais reais de fidelização</li>
+          <li>Ofereça workshops que ampliem o repertório técnico e criativo deste público, posicionando a franquia como uma fonte de conhecimento, não apenas de produto</li>
+          <li>Temas de alto interesse: Briefing, Gestão de Projetos, Diferenciais de Movelaria, Tendências de Mercado, Revestimentos e Novos Lançamentos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">05</div>
+  </div>
+
+  <!-- 06 · NEGÓCIOS CRUZADOS -->
+  <div class="slide" data-index="5">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Segmento</div>
+        <h2 class="slide-title">Negócios<br>Cruzados</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Mapeie empresas de outros segmentos na sua região — decoração, acabamentos, automação, arquitetura — que compartilhem do mesmo público de alto padrão</li>
+          <li>Proponha formatos de parceria mutuamente vantajosos: indicações recíprocas, ações conjuntas, presença compartilhada em eventos</li>
+          <li>Esse movimento fortalece o ecossistema premium local e posiciona a D'Linea como referência no mercado de alto padrão da sua região</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">06</div>
+  </div>
+
+  <!-- 07 · CORRETORES & IMOBILIÁRIAS -->
+  <div class="slide" data-index="6">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Segmento</div>
+        <h2 class="slide-title">Corretores &<br>Imobiliárias</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Concentre seus esforços em empreendimentos de alto padrão — onde o cliente já está disposto a investir em qualidade</li>
+          <li>Apresente o modelo de parceria diretamente aos proprietários e responsáveis pelos empreendimentos, com proposta de valor clara e objetiva</li>
+          <li>Convide os corretores para um evento exclusivo na franquia ou encontro virtual — o ambiente D'Linea é, por si só, um argumento de venda poderoso</li>
+          <li>Estruture sua apresentação em três atos: <strong>Institucional D'Linea → Apresentação da Franquia → Proposta de Parceria</strong> (benefícios, premiações e pontuação)</li>
+          <li>Encerre sempre com confraternização — negócios se consolidam nas relações</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">07</div>
+  </div>
+
+  <!-- 08 · SÍNDICOS -->
+  <div class="slide" data-index="7">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Segmento</div>
+        <h2 class="slide-title">Síndicos</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Ofereça condições exclusivas para condôminos como benefício direto da parceria — isso cria valor imediato para o síndico apresentar ao condomínio</li>
+          <li>Proponha um modelo onde parte do volume investido pelos moradores retorne em mobília para as áreas comuns — uma parceria que valoriza o patrimônio coletivo</li>
+          <li>Solicite participação nas assembleias e reuniões de condomínio para apresentar a proposta com autoridade e os diferenciais D'Linea ao vivo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">08</div>
+  </div>
+
+  <!-- 09 · MESTRES DE OBRAS -->
+  <div class="slide" data-index="8">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Segmento</div>
+        <h2 class="slide-title">Mestres de<br>Obras</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Ative este segmento com um programa de indicação estruturado e escalável — recompensas progressivas criam engajamento genuíno e constante</li>
+          <li><strong>5 indicações</strong> → Camisa polo exclusiva D'Linea</li>
+          <li><strong>10 indicações</strong> → Whisky premium de alto padrão</li>
+          <li><strong>15 indicações</strong> → Premiação de valor definida pela franquia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">09</div>
+  </div>
+
+  <!-- 10 · EVENTOS NA FRANQUIA -->
+  <div class="slide" data-index="9">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Estratégia de Ação</div>
+        <h2 class="slide-title">Eventos na<br>Franquia</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Reúna grupos pequenos e selecionados por afinidade — o ambiente íntimo favorece conexões mais profundas e decisões mais ágeis</li>
+          <li>Todo evento deve entregar <strong>valor real</strong>: workshops práticos, palestras inspiradoras ou treinamentos técnicos que elevem o repertório do convidado</li>
+          <li>Reserve o momento de confraternização para o encerramento — é quando as barreiras caem, os vínculos se solidificam e as oportunidades surgem naturalmente</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">10</div>
+  </div>
+
+  <!-- 11 · FOLLOW-UP -->
+  <div class="slide" data-index="10">
+    <div class="slide-bg dark-bg"></div>
+    <div class="slide-content split">
+      <div class="content-left">
+        <div class="section-tag">Gestão de Resultados</div>
+        <h2 class="slide-title">Follow-Up<br>Inteligente</h2>
+        <div class="accent-line"></div>
+        <div class="followup-tags">
+          <span>— Acompanhamento sistemático</span>
+          <span>— Organização por prioridade</span>
+          <span>— Análise de erros e acertos</span>
+          <span>— Mensuração de performance</span>
+          <span>— Planejamento do próximo ciclo</span>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="followup-card">
+          <div class="fu-row"><span class="fu-label">Novos Parceiros Prospectados</span><span class="fu-val">7</span></div>
+          <div class="fu-row"><span class="fu-label">Visitas Qualificadas Realizadas</span><span class="fu-val">12</span></div>
+          <div class="fu-row"><span class="fu-label">Projetos Captados</span><span class="fu-val">8</span></div>
+          <div class="fu-row"><span class="fu-label">Fechamentos no Período</span><span class="fu-val">3</span></div>
+          <div class="fu-row"><span class="fu-label">Materiais de Relacionamento Enviados</span><span class="fu-val">23</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-number-bg">11</div>
+  </div>
+
+  <!-- 12 · PROSPECÇÃO VIRTUAL (CAPA) -->
+  <div class="slide" data-index="11">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80" alt="" class="bg-img">
+      <div class="overlay dark"></div>
+    </div>
+    <div class="slide-content centered">
+      <div class="label-tag">Expansão do Alcance</div>
+      <h1 class="hero-title">Prospecção<br><em>sem fronteiras.</em></h1>
+      <div class="accent-line"></div>
+      <p class="hero-sub">O digital não substitui o presencial — ele amplifica. Use as ferramentas virtuais para multiplicar sua presença e antecipar conexões</p>
+    </div>
+    <div class="slide-number-bg">12</div>
+  </div>
+
+  <!-- 13 · REDES SOCIAIS -->
+  <div class="slide" data-index="12">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Presença Digital</div>
+        <h2 class="slide-title">Redes<br>Sociais</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list icon-list">
+          <li><span class="tag-pill">Seja visto pelo público certo</span></li>
+          <li><span class="tag-pill">Inicie conversas com intenção</span></li>
+          <li><span class="tag-pill">Engaje com curtidas estratégicas</span></li>
+          <li><span class="tag-pill">Comente com autoridade e relevância</span></li>
+          <li><span class="tag-pill">Valorize e amplifique o mercado local</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">13</div>
+  </div>
+
+  <!-- 14 · EXPERIÊNCIA -->
+  <div class="slide" data-index="13">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Experiência como Estratégia</div>
+        <h2 class="slide-title">Leve a marca<br>até o cliente</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list icon-list">
+          <li><span class="tag-pill">Leve a experiência da loja até o cliente</span></li>
+          <li><span class="tag-pill">Sacola sensorial com catálogos perfumados</span></li>
+          <li><span class="tag-pill">Delivery de café com brinde personalizado</span></li>
+          <li><span class="tag-pill">Tour virtual exclusivo pelo showroom</span></li>
+          <li><span class="tag-pill">Vídeos autorais produzidos pela franquia</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">14</div>
+  </div>
+
+  <!-- 15 · INSEGURANÇA -->
+  <div class="slide" data-index="14">
+    <div class="slide-bg dark-bg"></div>
+    <div class="slide-content split">
+      <div class="content-left">
+        <h2 class="slide-title large-light">O peso<br>da insegurança</h2>
+        <div class="accent-line"></div>
+        <p class="subtitle-tag">Por que evitamos prospectar?</p>
+      </div>
+      <div class="content-right quote-right">
+        <p class="quote-title">Prospectar, em sua essência, é uma interrupção — e isso gera desconforto real.</p>
+        <p class="quote-body">Vivemos em uma era em que o tempo das pessoas é o bem mais escasso. <strong>Solicitar atenção</strong> de alguém que não te aguarda é, provavelmente, o ato mais exigente dentro de todo o processo comercial — e é exatamente por isso que a maioria evita.</p>
+        <p class="quote-body">A imprevisibilidade da reação alheia cria uma sensação de <strong>vulnerabilidade</strong> que paralisa. Reconhecer isso é o primeiro passo para superá-la com método e preparo.</p>
+      </div>
+    </div>
+    <div class="slide-number-bg">15</div>
+  </div>
+
+  <!-- 16 · OBJEÇÕES -->
+  <div class="slide" data-index="15">
+    <div class="slide-bg dark-bg"></div>
+    <div class="slide-content split">
+      <div class="content-left">
+        <h2 class="slide-title large-light">Objeções<br>na prospecção</h2>
+        <div class="accent-line"></div>
+        <p class="subtitle-tag">Antecipar a rejeição é o caminho para vencê-la</p>
+      </div>
+      <div class="content-right quote-right">
+        <p class="quote-title">O poder dos roteiros de reversão</p>
+        <p class="quote-body">Construa scripts de contorno de objeções que sejam <strong>autenticamente seus</strong>. Não scripts decorados — mas respostas internalizadas que transmitam segurança, verdade e domínio da conversa.</p>
+        <p class="quote-body">Nenhum roteiro é perfeito e nem funciona 100% das vezes. O que você precisa é de uma estrutura que maximize suas chances de avançar para um <strong>sim</strong> — e a prática consistente faz isso acontecer.</p>
+      </div>
+    </div>
+    <div class="slide-number-bg">16</div>
+  </div>
+
+  <!-- 17 · CONFIANÇA -->
+  <div class="slide" data-index="16">
+    <div class="slide-bg dark-bg"></div>
+    <div class="slide-content split">
+      <div class="content-left">
+        <h2 class="slide-title large-light">A força<br>da confiança</h2>
+        <div class="accent-line"></div>
+        <p class="subtitle-tag">O sucesso na prospecção começa na sua disposição de agir</p>
+      </div>
+      <div class="content-right quote-right">
+        <ul class="channel-list">
+          <li>Pegue o telefone e ligue</li>
+          <li>Entre pela porta e se apresente</li>
+          <li>Envie um e-mail ou mensagem direta</li>
+          <li>Faça a conexão no LinkedIn com intencionalidade</li>
+        </ul>
+        <p class="quote-body">A prospecção de alta performance sempre foi — e sempre será — um reflexo direto da <strong>disposição e confiança</strong> do consultor em dar o primeiro passo.</p>
+        <p class="quote-body">Uma postura <strong>implacável e consistente</strong> separa os consultores medianos dos que constroem carteiras sólidas de alto padrão.</p>
+      </div>
+    </div>
+    <div class="slide-number-bg">17</div>
+  </div>
+
+  <!-- 18 · RESPONSABILIDADE -->
+  <div class="slide" data-index="17">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1508243771214-6e95d137426b?w=1600&q=80" alt="" class="bg-img">
+      <div class="overlay dark"></div>
+    </div>
+    <div class="slide-content centered">
+      <h1 class="hero-title large-hero">Prospectar é<br><em>responsabilidade</em><br>de todos.</h1>
+      <div class="accent-line"></div>
+      <p class="hero-sub">Do consultor ao líder — cada membro da equipe é um agente ativo de geração de oportunidades</p>
+    </div>
+    <div class="slide-number-bg">18</div>
+  </div>
+
+  <!-- 19 · ALVOS & POSICIONAMENTO -->
+  <div class="slide" data-index="18">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Pilares do Sucesso em Vendas</div>
+        <h2 class="slide-title">Alvo &<br>Posicionamento</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li><strong>Defina seu cliente ideal com precisão:</strong> Quem é a persona do meu produto? Para quem a D'Linea representa não apenas um móvel, mas uma transformação real do ambiente e do estilo de vida?</li>
+          <li>Nas redes sociais, todo conteúdo deve ser construído para atrair e converter exatamente esse perfil — audiência certa, mensagem certa, momento certo</li>
+          <li><strong>Defina e viva seu posicionamento:</strong> Que valor único você entrega? Internalize essa resposta e faça dela sua identidade comercial diária</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">19</div>
+  </div>
+
+  <!-- 20 · CONTEÚDO QUE CONVERTE -->
+  <div class="slide" data-index="19">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Pilares do Sucesso em Vendas</div>
+        <h2 class="slide-title">Conteúdo<br>que converte</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li><strong>Produza conteúdo com propósito:</strong> Cada publicação, ligação, evento ou conversa deve comunicar a <strong>solução</strong> para um problema real, a <strong>realização</strong> de um desejo e a <strong>oportunidade</strong> de viver uma experiência de alto padrão</li>
+          <li><strong>Crie diálogo genuíno:</strong> Redes sociais existem para socializar — use enquetes, caixas de perguntas e ferramentas interativas para conhecer a fundo sua audiência e torná-la sua próxima cliente</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">20</div>
+  </div>
+
+  <!-- 21 · MOSTRE O PROCESSO -->
+  <div class="slide" data-index="20">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Conteúdo de Alto Impacto</div>
+        <h2 class="slide-title">Mostre o<br>processo</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Registre e compartilhe o processo de montagem em tempo real — vídeos e fotos dos ambientes sendo transformados geram expectativa, desejo e prova social</li>
+          <li>Publique imagens da sala de apresentação impecavelmente preparada para receber clientes — o ambiente é parte do produto</li>
+          <li>Convide clientes satisfeitos a registrar e compartilhar seus ambientes entregues, marcando a franquia — depoimentos espontâneos valem mais do que qualquer anúncio</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">21</div>
+  </div>
+
+  <!-- 22 · AUTORIDADE & MARCA -->
+  <div class="slide" data-index="21">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Conteúdo de Alto Impacto</div>
+        <h2 class="slide-title">Autoridade<br>& Marca</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Produza vídeos com especificadores parceiros falando sobre a marca e a franquia — a voz de quem indica tem mais credibilidade do que a de quem vende</li>
+          <li>Publique moodboards com composições exclusivas de acabamentos e complementos D'Linea — inspire antes de oferecer</li>
+          <li>Apresente sua equipe com profissionalismo — pessoas confiam em pessoas</li>
+          <li>Divulgue com frequência os canais de atendimento digital e os diferenciais técnicos do produto — eduque o mercado para elevar a percepção de valor</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number-bg">22</div>
+  </div>
+
+  <!-- 23 · DNA DO CONSULTOR DE ELITE -->
+  <div class="slide" data-index="22">
+    <div class="slide-bg dark-bg"></div>
+    <div class="slide-content split">
+      <div class="content-left">
+        <h2 class="slide-title large-light">O DNA do<br>consultor<br>de elite</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="content-right quote-right">
+        <div class="astro-grid">
+          <div class="astro-item">
+            <span class="astro-label">Não constroem narrativas de autossabotagem:</span>
+            <span class="astro-quote">"Agora não é o momento certo para ligar — eles devem estar no almoço."</span>
+          </div>
+          <div class="astro-item">
+            <span class="astro-label">Não terceirizam a responsabilidade:</span>
+            <span class="astro-quote">"Não retornam minhas ligações. O problema não é meu."</span>
+          </div>
+          <div class="astro-item">
+            <span class="astro-label">Não desperdiçam energia em reclamações:</span>
+            <span class="astro-quote">"As orientações da empresa não funcionam para mim."</span>
+          </div>
+          <div class="astro-item">
+            <span class="astro-label">Não são governados pelo medo da rejeição:</span>
+            <span class="astro-quote">"E se ela disser não? E se eu interromper na hora errada?"</span>
+          </div>
+          <div class="astro-item">
+            <span class="astro-label">Não deixam para amanhã o que é de hoje:</span>
+            <span class="astro-quote">"Não tenho tempo agora. Organizo tudo amanhã."</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-number-bg">23</div>
+  </div>
+
+  <!-- 24 · PROSPECTAM SEM PARAR -->
+  <div class="slide" data-index="23">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80" alt="" class="bg-img right-align">
+      <div class="overlay left-fade"></div>
+    </div>
+    <div class="slide-content split-img">
+      <div class="content-text">
+        <div class="section-tag">Mentalidade de Alta Performance</div>
+        <h2 class="slide-title">Prospectam<br>sem parar.</h2>
+        <div class="accent-line"></div>
+        <ul class="tip-list">
+          <li>Prospectam quando os resultados são excelentes — porque sabem que o pipeline de hoje alimenta os resultados de amanhã</li>
+          <li>Prospectam quando os resultados são fracos — porque sabem que a saída de qualquer crise começa com uma nova oportunidade gerada</li>
+          <li>Prospectam mesmo sem motivação — porque sua disciplina é maior do que o humor do dia, e sua meta não espera pelo seu estado de espírito</li>
+        </ul>
+        <p class="cta-question">Onde você honestamente se posiciona hoje?</p>
+      </div>
+    </div>
+    <div class="slide-number-bg">24</div>
+  </div>
+
+  <!-- 25 · ENCERRAMENTO -->
+  <div class="slide" data-index="24">
+    <div class="slide-bg">
+      <img src="https://images.unsplash.com/photo-1516788875874-c5912cae7b43?w=1600&q=80" alt="" class="bg-img">
+      <div class="overlay dark"></div>
+    </div>
+    <div class="slide-content centered">
+      <div class="label-tag">Princípio D'Linea</div>
+      <h1 class="hero-title final-title">Prospecção é<br>o início de um<br><em>relacionamento.</em></h1>
+      <div class="accent-line"></div>
+      <p class="hero-sub final-sub">É a sua primeira — e às vezes única — oportunidade de criar uma impressão que abre portas. Execute com excelência desde o primeiro contato.</p>
+      <div class="dlinea-badge">D'LINEA</div>
+    </div>
+    <div class="slide-number-bg">25</div>
+  </div>
+
+</div><!-- /slides-container -->
+
+<script src="script.js"></script>
+</body>
+</html>
